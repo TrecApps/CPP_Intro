@@ -1,0 +1,3 @@
+My favorite language is C++
+My second favorite might become Rust soon
+I like Windows C++ programming
