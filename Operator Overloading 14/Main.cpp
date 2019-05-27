@@ -28,12 +28,16 @@ int main()
 
 	// add the times together
 	Time timeTotal = time1 + time2;
+	timeTotal.setTimeMode(time_military);
 
 	std::cout << "The two times added together are ";
 	std::cout << timeTotal;
 	std::cout << "\n\n";
 
-	timeTotal = timeTotal + Time(4, 10);
+	time1 = Time(4, 10);
+
+	timeTotal = timeTotal + time1;
+	timeTotal.setTimeMode(time_military);
 
 	std::cout << "The total time + 4:10 is ";
 	std::cout << timeTotal;

@@ -85,7 +85,7 @@ int main()
 
     // Used in place of C++'s std::cin.get()
     char scan[5];
-#ifdef _MSC_VER // If this is Visual Studio
+    #ifdef _MSC_VER // If this is Visual Studio
     scanf_s(scan, 5); // Halt the program before exiting
 #else
     scanf("", scan); // Yeah! I think Microsoft's way is better
